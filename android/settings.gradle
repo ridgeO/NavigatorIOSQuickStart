@@ -1,0 +1,3 @@
+rootProject.name = 'NavigatorIOSQuickStart'
+
+include ':app'
