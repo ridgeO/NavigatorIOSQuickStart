@@ -1,16 +1,16 @@
 'use strict';
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   View,
   Text
 } from 'react-native';
+import styles from '../styles.js'
 
 class Left extends Component {
   render() {
     return(
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Left Page</Text>
+        <Text style={styles.pageText}>Left Page</Text>
       </View>
     );
   }

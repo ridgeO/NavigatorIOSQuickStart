@@ -1,11 +1,11 @@
 'use strict';
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   View,
   Text,
   TouchableHighlight
 } from 'react-native';
+import styles from '../styles.js'
 
 class Main extends Component {
   constructor(props){
@@ -19,11 +19,13 @@ class Main extends Component {
   render() {
     return(
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Main Page</Text>
+        <Text style={styles.pageText}>Main Page</Text>
         <TouchableHighlight
           onPress={() => this.returnToLanding()}
+          style={styles.button}
+          underlayColor='#24CE84'
         >
-          <Text>Press to Go back to Landing</Text>
+          <Text style={styles.buttonText}>Press to return to Landing</Text>
         </TouchableHighlight>
       </View>
     );

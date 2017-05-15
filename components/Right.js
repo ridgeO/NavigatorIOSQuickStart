@@ -5,12 +5,13 @@ import {
   View,
   Text
 } from 'react-native';
+import styles from '../styles.js'
 
 class Right extends Component {
   render() {
     return(
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Right Page</Text>
+        <Text style={styles.pageText}>Right Page</Text>
       </View>
     );
   }
